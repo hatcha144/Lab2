@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GClab2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double Length, Width, Area, Perimeter;
+            String restart; 
+            do
+            { 
+
+                Console.Write("Enter Length: ");
+
+                Length = double.Parse(Console.ReadLine());
+
+                Console.Write("Enter Width: ");
+
+                Width = double.Parse(Console.ReadLine());
+
+                Area = Width * Length;
+                Perimeter = 2 * (Length + Width);
+
+                Console.WriteLine("The area is: {0} ", Area);
+
+                Console.WriteLine("The perimteter is: {0} ", Perimeter);
+
+
+                
+
+                Console.WriteLine("Would you like to continue measuring rooms? (Y or N)");
+                
+
+                restart = Console.ReadLine(); 
+
+                
+               
+                }while (restart == "y" || restart == "Y") ;
+            
+            }
+        }
+    }
